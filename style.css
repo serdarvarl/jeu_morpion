@@ -1,0 +1,61 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 1200px;
+
+}
+
+
+h1 {
+    font-size: 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+h2 {
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: center;
+
+
+}
+
+
+
+.jeu_boite {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    margin-top: 50px;
+}
+
+.board {
+    display: inline-block;
+    margin-bottom: 20px;  
+}
+
+
+.line {
+    display: flex;
+
+}
+
+
+.cell {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #000;
+}
+
+.cell img {
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.button_container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
