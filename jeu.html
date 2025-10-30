@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Jeu Morpion</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
@@ -12,33 +13,44 @@
     <h1>Jeu Morpion - TP 10</h1>
     <h2>Utiles Vscode, JS, HTML, CSS</h2>
 
+
+
+
+    <div id="status">
+        <p>Jouer</p>
+    </div>
+
     <div class="jeu_boite">
+    <!--
+    list de list
+    list_board=[line_1[i_0,i_1,i_2],
+                line_2[i_0,i_1,i_2],
+                line_3[i_0,i_1,i_2]
+                ]
+    -->
+
         <div class="board">
             <div class="line">
-                <div class="cell"><img src="vide.png" alt=""></div>
-                <div class="cell"><img src="vide.png" alt=""></div>
-                <div class="cell"><img src="vide.png" alt=""></div>
+                <div class="cell" data-row="0" data-col="0"><img src="vide.png" alt=""></div>
+                <div class="cell" data-row="0" data-col="1"><img src="vide.png" alt=""></div>
+                <div class="cell" data-row="0" data-col="2"><img src="vide.png" alt=""></div>
             </div>
             <div class="line">
-                <div class="cell"><img src="vide.png" alt=""></div>
-                <div class="cell"><img src="vide.png" alt=""></div>
-                <div class="cell"><img src="vide.png" alt=""></div>
+                <div class="cell" data-row="1" data-col="0"><img src="vide.png" alt=""></div>
+                <div class="cell" data-row="1" data-col="1"><img src="vide.png" alt=""></div>
+                <div class="cell" data-row="1" data-col="2"><img src="vide.png" alt=""></div>
             </div>
             <div class="line">
-                <div class="cell"><img src="vide.png" alt=""></div>
-                <div class="cell"><img src="vide.png" alt=""></div>
-                <div class="cell"><img src="vide.png" alt=""></div>
+                <div class="cell" data-row="2" data-col="0"><img src="vide.png" alt=""></div>
+                <div class="cell" data-row="2" data-col="1"><img src="vide.png" alt=""></div>
+                <div class="cell" data-row="2" data-col="2"><img src="vide.png" alt=""></div>
             </div>
         </div>
         <div class="button_container">
-            <button>Restart</button>
-            <button>1 vs 1</button>
-            <button>Contrer <br> Machine </button>
-
-
+            <button id="restart">Restart</button>
+            <button id="oneTone">1 vs 1</button>
+            <button id="machineJeu">Contrer <br> Machine </button>
         </div>
-
-
     </div>
 
 
